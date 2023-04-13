@@ -1,0 +1,12 @@
+{
+  "If you send this": [
+    "The bot will respond with this",
+    "or this",
+    "or this"
+  ],
+  "If you send this instead": [
+    "The bot will respond with this",
+    "or this",
+    "or this"
+  ]
+}
