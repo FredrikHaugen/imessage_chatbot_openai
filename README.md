@@ -52,7 +52,7 @@
     <p>In the code provided, the standard responses are stored in a dictionary and are checked against the user's input using the `check_for_matching_message` function. The minimum similarity score needed to match a received message to one of the standard responses can be adjusted by changing the threshold value in the `if similarity >= 0.65` line.</p>
     <p>When a match is found, the chatbot selects a random response from the list of responses associated with the matched pattern. If no match is found, the chatbot sends the user's message to the OpenAI GPT-3 language model to generate a response.</p>
     <h3>Run the Script</h3>
-    <p>Run the script using <code>python3 chatbot.py</code>.</p>
+    <p>Run the script using <code>python3 chatbot.py</code></p>
     <h2>Usage</h2>
     <p>
       The chatbot will automatically send responses to incoming messages on
