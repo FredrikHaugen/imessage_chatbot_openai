@@ -31,13 +31,13 @@ last_processed_message_id = ""
 
 
 phone_to_email = {
-    contact_handle: "sample@gmail.com",  # Add the actual email address associated with the Apple ID
+    contact_handle: "sample@icloud.com",  # Add the actual email address associated with the Apple ID
 }
 
 
 conn = sqlite3.connect(
     f"/Sample/SampleUsername/Library/Messages/chat.db"
-)  # Replace with the actual email address associated with the Apple ID
+)  # Replace with the actual path to your chat.db file
 c = conn.cursor()
 
 
@@ -70,7 +70,6 @@ def add_to_system_messages(system_messages, fetched_messages, starting_index):
     return system_messages
 
 
-# Update the system_messages list with the fetched messages
 system_messages = add_to_system_messages(system_messages, last_4_messages, 4)
 
 
@@ -106,7 +105,7 @@ def check_for_matching_message(received_message, standard_responses):
 openai.api_key = "Your API key"
 
 phrases_to_remove = [
-    "Here you can add a list of phrases to remove if wanted otherwise leave it empty",
+    "Here you can add a list of phrases or words to remove if wanted otherwise leave the list empty",
 ]
 
 
