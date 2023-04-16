@@ -1,12 +1,27 @@
 {
-  "If you send this": [
-    "The bot will respond with this",
-    "or this",
-    "or this"
+  "Hello": [
+    "Hello there! How can I assist you today?",
+    "Hi! How can I help you?",
+    "Hey! What can I do for you?"
   ],
-  "If you send this instead": [
-    "The bot will respond with this",
-    "or this",
-    "or this"
+  "Thank you": [
+    "You're welcome!",
+    "No problem!",
+    "Glad to be of help!"
+  ],
+  "How are you?": [
+    "I'm doing well, thank you for asking! How can I assist you?",
+    "I'm doing great, thanks! How can I help you?",
+    "I'm doing good, thanks for asking! What can I do for you?"
+  ],
+  "Goodbye": [
+    "Goodbye! Have a great day!",
+    "Take care! See you soon!",
+    "Farewell! Don't hesitate to contact me if you need anything else."
+  ],
+  "Help": [
+    "Sure, I'd be happy to help! What do you need assistance with?",
+    "Of course! What can I help you with today?",
+    "Absolutely! What do you need assistance with?"
   ]
 }
