@@ -36,7 +36,7 @@ phone_to_email = {
 
 
 conn = sqlite3.connect(
-    f"/Users/UserName/Library/Messages/chat.db"
+    f"/Sample/SampleUsername/Library/Messages/chat.db"
 )  # Replace with the actual email address associated with the Apple ID
 c = conn.cursor()
 
@@ -97,7 +97,8 @@ def check_for_matching_message(received_message, standard_responses):
         cleaned_key = remove_punctuation_and_symbols(key).lower().replace(" ", "")
         similarity = calculate_similarity(cleaned_key, received_message)
 
-        if similarity >= 0.65:
+        if similarity >= 0.65: # Adjust the threshold value in the line `if similarity >= 0.65` to determine the minimum similarity score needed to match a received message to one of the standard responses. Standard responses are stored in the `standard_responses` variable and are used to generate pre-written responses to the user.
+
             return key
     return None
 
